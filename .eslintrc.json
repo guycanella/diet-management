@@ -1,0 +1,11 @@
+{
+  "plugins": ["react-hooks"],
+  "extends": [
+    "@rocketseat/eslint-config/next"
+  ],
+  "rules": {
+    "no-console":"error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}
