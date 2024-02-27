@@ -1,4 +1,5 @@
 # Diet Management
+<img src="https://img.shields.io/badge/latest_release-1.0.0-green" alt="Release version" />
 
 ![Peek 27-02-2024 15-28](https://github.com/guycanella/diet-management/assets/12264803/99e980fa-8f9e-40a1-9387-b709908fa7c3)
 
