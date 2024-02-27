@@ -6,7 +6,7 @@ const themes = {
     type: 'dark',
     primary: 'bg-[#3F3F3F]',
     secondary: 'bg-[#8B8B8B] border-[#8B8B8B]',
-    tertiary: '#9CA3AF',
+    tertiary: '#E5E7EB',
     textColor: 'text-[#FFFFFF]',
     secondaryText: 'bg-[##7A5AF5]',
     radio: 'text-[#FFFFFF] border-[#FFFFFF]',
