@@ -7,7 +7,7 @@
 
 This is an app for the web where it manages the meals and the nutrients of your diet. It calculates your Basal Metabolic Rate (BMR) using two methods: the [Harris-Benedict](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1091498/) and the [Mifflin-St. Jeor](https://read.qxmd.com/read/2305711/a-new-predictive-equation-for-resting-energy-expenditure-in-healthy-individuals?redirected=slug).
 
-**Obs:** The values of the vitamins, minerals, and amino acids in the database are found in the [USDA](https://www.usda.gov/) (Department of Agriculture of US) website.
+**Obs:** The values of the vitamins, minerals, and amino acids in the database are found in the [USDA](https://www.usda.gov/) (Department of Agriculture of US) website. These values are approximated.
 **Obs:** The aliments are in the file `bd.ts` inside the `API` folder.
 
 ## Development
@@ -28,12 +28,12 @@ Run:
 
 or
 
-    yarn 
+    yarn
 
 or
 
     bun install
-    
+
 to install the dependencies, and to run the project:
 
     npm run dev
