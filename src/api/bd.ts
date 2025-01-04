@@ -1,6 +1,13 @@
 import { faker } from '@faker-js/faker'
 
-type FoodType = 'cereal' | 'legumes' | 'supplement' | 'custom' | 'graos'
+type FoodType =
+  | 'cereals'
+  | 'vegetables'
+  | 'supplements'
+  | 'custom'
+  | 'grains'
+  | 'greens'
+  | 'nuts'
 
 export type MacrosType = 'protein' | 'carbs' | 'fats' | 'cholesterol' | 'fiber'
 
@@ -78,7 +85,7 @@ export type FoodsType = {
 
 const database = [
   {
-    type: 'cereal',
+    type: 'cereals',
     foodId: faker.string.uuid(),
     name: 'Arroz Branco Cozido, Tipo 1',
     portion: 100,
@@ -143,7 +150,7 @@ const database = [
     },
   },
   {
-    type: 'legumes',
+    type: 'vegetables',
     foodId: faker.string.uuid(),
     name: 'Feijão Carioca Cozido',
     portion: 100,
@@ -207,7 +214,7 @@ const database = [
     },
   },
   {
-    type: 'legumes',
+    type: 'grains',
     foodId: faker.string.uuid(),
     name: 'Lentilha Cozida',
     portion: 100,
@@ -271,7 +278,7 @@ const database = [
     },
   },
   {
-    type: 'legumes',
+    type: 'vegetables',
     foodId: faker.string.uuid(),
     name: 'Palmito Drenado',
     portion: 100,
@@ -399,7 +406,7 @@ const database = [
     },
   },
   {
-    type: 'supplement',
+    type: 'supplements',
     foodId: faker.string.uuid(),
     name: 'Proteína de Soja Isolada',
     portion: 30,
@@ -527,50 +534,50 @@ const database = [
     },
   },
   {
-    type: 'legumes',
+    type: 'grains',
     foodId: faker.string.uuid(),
     name: 'Grão de Bico Cozido',
     portion: 100,
-    calories: 162,
+    calories: 152,
     macros: {
       type: 'g',
       data: {
-        protein: 8.86,
-        carbs: 27.4,
-        fats: 2.59,
+        protein: 8.7,
+        carbs: 27.2,
+        fats: 0.54,
         cholesterol: 0,
-        fiber: 7.6,
+        fiber: 17.4,
       },
     },
     minerals: {
       type: 'mg',
       data: {
-        iron: 2.89,
-        calcium: 49,
-        sodium: 7,
-        magnesium: 48,
-        potassium: 291,
-        manganese: 1.03,
-        phosphorus: 168,
-        copper: 0.352,
-        zinc: 1.53,
+        iron: 1.74,
+        calcium: 33,
+        sodium: 304,
+        magnesium: 47.98,
+        potassium: 293,
+        manganese: 0,
+        phosphorus: 167,
+        copper: 0,
+        zinc: 2.5,
       },
     },
     vitamins: {
       type: 'mg',
       data: {
-        vitaminA: 0.001,
-        vitaminC: 1.3,
+        vitaminA: 0.0,
+        vitaminC: 2.1,
         vitaminD: 0,
-        vitaminE: 0.35,
-        vitaminK: 0.004,
-        riboflavin: 0.063,
-        niacin: 0.526,
-        pantothenicAcid: 0.286,
-        vitaminB1: 0.116,
-        vitaminB6: 0.139,
+        vitaminE: 0.6,
+        vitaminK: 0.06,
+        riboflavin: 0.0,
+        niacin: 0,
+        pantothenicAcid: 0,
+        vitaminB1: 0,
+        vitaminB6: 0,
         vitaminB12: 0,
-        folate: 0.172,
+        folate: 0,
       },
     },
     aminoAcids: {
@@ -591,71 +598,7 @@ const database = [
     },
   },
   {
-    type: 'legumes',
-    foodId: faker.string.uuid(),
-    name: 'Grão de Bico Cozido',
-    portion: 100,
-    calories: 327,
-    macros: {
-      type: 'g',
-      data: {
-        protein: 51.46,
-        carbs: 33.92,
-        fats: 1.22,
-        cholesterol: 0,
-        fiber: 17.5,
-      },
-    },
-    minerals: {
-      type: 'mg',
-      data: {
-        iron: 9.24,
-        calcium: 241,
-        sodium: 20,
-        magnesium: 290,
-        potassium: 2384,
-        manganese: 0,
-        phosphorus: 674,
-        copper: 4.065,
-        zinc: 2.46,
-      },
-    },
-    vitamins: {
-      type: 'mg',
-      data: {
-        vitaminA: 0.002,
-        vitaminC: 0,
-        vitaminD: 0,
-        vitaminE: 0.35,
-        vitaminK: 0.0041,
-        riboflavin: 0.253,
-        niacin: 2.612,
-        pantothenicAcid: 0,
-        vitaminB1: 0.698,
-        vitaminB6: 0.574,
-        vitaminB12: 0,
-        folate: 0.305,
-      },
-    },
-    aminoAcids: {
-      type: 'mg',
-      data: {
-        tryptophan: 1200,
-        threonine: 3800,
-        isoleucine: 4700,
-        leucine: 7700,
-        lysine: 6500,
-        methionine: 1300,
-        cystine: 1400,
-        phenylalanine: 4900,
-        tyrosine: 3400,
-        valine: 4900,
-        histidine: 2600,
-      },
-    },
-  },
-  {
-    type: 'legumes',
+    type: 'greens',
     foodId: faker.string.uuid(),
     name: 'Alface',
     portion: 100,
@@ -719,7 +662,7 @@ const database = [
     },
   },
   {
-    type: 'legumes',
+    type: 'greens',
     foodId: faker.string.uuid(),
     name: 'Espinafre',
     portion: 100,
@@ -783,7 +726,7 @@ const database = [
     },
   },
   {
-    type: 'legumes',
+    type: 'vegetables',
     foodId: faker.string.uuid(),
     name: 'Brocolis',
     portion: 100,
@@ -847,7 +790,7 @@ const database = [
     },
   },
   {
-    type: 'legumes',
+    type: 'greens',
     foodId: faker.string.uuid(),
     name: 'Couve',
     portion: 100,
@@ -911,7 +854,7 @@ const database = [
     },
   },
   {
-    type: 'legumes',
+    type: 'greens',
     foodId: faker.string.uuid(),
     name: 'Repolho',
     portion: 100,
@@ -975,7 +918,7 @@ const database = [
     },
   },
   {
-    type: 'legumes',
+    type: 'vegetables',
     foodId: faker.string.uuid(),
     name: 'Tomate',
     portion: 100,
@@ -1103,7 +1046,7 @@ const database = [
     },
   },
   {
-    type: 'graos',
+    type: 'nuts',
     foodId: faker.string.uuid(),
     name: 'Castanha de Caju',
     portion: 100,
@@ -1167,7 +1110,7 @@ const database = [
     },
   },
   {
-    type: 'graos',
+    type: 'nuts',
     foodId: faker.string.uuid(),
     name: 'Amendoas',
     portion: 100,
@@ -1231,9 +1174,9 @@ const database = [
     },
   },
   {
-    type: 'graos',
+    type: 'nuts',
     foodId: faker.string.uuid(),
-    name: 'Castnha do Pará',
+    name: 'Castanha do Pará',
     portion: 100,
     calories: 659,
     macros: {
@@ -1295,7 +1238,7 @@ const database = [
     },
   },
   {
-    type: 'graos',
+    type: 'nuts',
     foodId: faker.string.uuid(),
     name: 'Amendoim',
     portion: 100,
@@ -1359,7 +1302,7 @@ const database = [
     },
   },
   {
-    type: 'supplement',
+    type: 'supplements',
     foodId: faker.string.uuid(),
     name: 'Leite Castanha do Para',
     portion: 200,
@@ -1423,7 +1366,7 @@ const database = [
     },
   },
   {
-    type: 'supplement',
+    type: 'supplements',
     foodId: faker.string.uuid(),
     name: 'Leite Castanha de Caju',
     portion: 200,
@@ -1487,7 +1430,7 @@ const database = [
     },
   },
   {
-    type: 'legumes',
+    type: 'vegetables',
     foodId: faker.string.uuid(),
     name: 'Batata Cozida',
     portion: 100,
@@ -1551,7 +1494,7 @@ const database = [
     },
   },
   {
-    type: 'legumes',
+    type: 'vegetables',
     foodId: faker.string.uuid(),
     name: 'Mandioca Cozida',
     portion: 100,
@@ -1675,6 +1618,134 @@ const database = [
         tyrosine: 1100,
         valine: 1155,
         histidine: 976,
+      },
+    },
+  },
+  {
+    type: 'grains',
+    foodId: faker.string.uuid(),
+    name: 'PTS Proteína Texturizada de Soja',
+    portion: 100,
+    calories: 270,
+    macros: {
+      type: 'g',
+      data: {
+        protein: 52,
+        carbs: 30,
+        fats: 4.0,
+        cholesterol: 0,
+        fiber: 4.0,
+      },
+    },
+    minerals: {
+      type: 'mg',
+      data: {
+        iron: 10,
+        calcium: 320,
+        sodium: 609.7,
+        magnesium: 300,
+        potassium: 2400,
+        manganese: 5,
+        phosphorus: 730,
+        copper: 2,
+        zinc: 5,
+      },
+    },
+    vitamins: {
+      type: 'mg',
+      data: {
+        vitaminA: 0,
+        vitaminC: 0,
+        vitaminD: 0,
+        vitaminE: 0,
+        vitaminK: 0,
+        riboflavin: 0.31,
+        niacin: 2.6,
+        pantothenicAcid: 0,
+        vitaminB1: 0,
+        vitaminB6: 0.5,
+        vitaminB12: 0,
+        folate: 0.3,
+      },
+    },
+    aminoAcids: {
+      type: 'mg',
+      data: {
+        tryptophan: 1200,
+        threonine: 3800,
+        isoleucine: 4700,
+        leucine: 7700,
+        lysine: 6500,
+        methionine: 1300,
+        cystine: 1400,
+        phenylalanine: 4900,
+        tyrosine: 3400,
+        valine: 4900,
+        histidine: 2600,
+      },
+    },
+  },
+  {
+    type: 'vegetables',
+    foodId: faker.string.uuid(),
+    name: 'Batata Doce',
+    portion: 100,
+    calories: 90,
+    macros: {
+      type: 'g',
+      data: {
+        protein: 2.01,
+        carbs: 20.71,
+        fats: 0,
+        cholesterol: 0,
+        fiber: 3.3,
+      },
+    },
+    minerals: {
+      type: 'mg',
+      data: {
+        iron: 0.8,
+        calcium: 18,
+        sodium: 36,
+        magnesium: 0,
+        potassium: 475,
+        manganese: 0,
+        phosphorus: 0,
+        copper: 0,
+        zinc: 0,
+      },
+    },
+    vitamins: {
+      type: 'mg',
+      data: {
+        vitaminA: 0,
+        vitaminC: 0,
+        vitaminD: 0,
+        vitaminE: 0,
+        vitaminK: 0,
+        riboflavin: 0,
+        niacin: 0,
+        pantothenicAcid: 0,
+        vitaminB1: 0,
+        vitaminB6: 0,
+        vitaminB12: 0,
+        folate: 0,
+      },
+    },
+    aminoAcids: {
+      type: 'mg',
+      data: {
+        tryptophan: 0,
+        threonine: 0,
+        isoleucine: 0,
+        leucine: 0,
+        lysine: 0,
+        methionine: 0,
+        cystine: 0,
+        phenylalanine: 0,
+        tyrosine: 0,
+        valine: 0,
+        histidine: 0,
       },
     },
   },
